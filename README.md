@@ -40,8 +40,13 @@ Modelin genelleme kabiliyetini artırmak ve ezberlemeyi (overfitting) önlemek a
 
 ### Modelleme Yaklaşımı ve Deneyler
 En iyi model mimarisini bulmak için iki aşamalı bir deney yapılmıştır:
-1.  **Deney 1: Sıfırdan CNN Modeli (Başlangıç Denemesi):** İlk olarak, standart bir CNN modeli sıfırdan eğitilmiş ve **%75-%80** gibi sınırlı bir başarıya ulaşılmıştır.
-2.  **Deney 2: Transfer Learning ile `EfficientNetB4` (Nihai Model):** İlk denemedeki düşük başarı üzerine, ImageNet üzerinde önceden eğitilmiş `EfficientNetB4` mimarisi ile **Transfer Learning** yaklaşımı benimsenmiştir.
+**Deney 1: Sıfırdan CNN Modeli (Başlangıç Denemesi):** İlk olarak, standart bir CNN modeli sıfırdan eğitilmiş ve **%75-%80** gibi sınırlı bir başarıya ulaşılmıştır.
+
+   ![Sıfırdan CNN Eğitim Grafiği](images/ilk_deneme.png)
+>*Grafikte de görüldüğü gibi, modelin eğitim doğruluğu (mavi çizgi) artmaya devam ederken, doğrulama doğruluğu (turuncu çizgi) bir noktadan sonra platoya ulaşmış ve aradaki fark açılmıştır. Bu durum, modelin ezberlemeye (overfitting) yatkın olduğunu göstermektedir. Bu sonuç, daha gelişmiş bir yaklaşıma ihtiyaç duyulduğunu ortaya koymuştur.*
+
+
+**Deney 2: Transfer Learning ile `EfficientNetB4` (Nihai Model):** İlk denemedeki düşük başarı üzerine, ImageNet üzerinde önceden eğitilmiş `EfficientNetB4` mimarisi ile **Transfer Learning** yaklaşımı benimsenmiştir.
 
 ### Model Eğitimi ve İnce Ayar (Fine-Tuning)
 Model, en iyi performansı elde etmek için iki aşamada eğitilmiştir:
