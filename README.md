@@ -11,7 +11,7 @@ Bu proje, Akbank & Global AI Hub işbirliğiyle düzenlenen Derin Öğrenme Boot
 
 ## Projenin Amacı
 
-Bu projenin temel amacı, verilen bir beyin MR görüntüsünü analiz ederek, görüntünün dört sınıftan hangisine ait olduğunu yüksek doğrulukla tespit edebilen bir derin öğrenme modeli geliştirmektir: **"Glioma", "Meningioma", "Tümör Yok"** veya **"Hipofiz (Pituitary)"**.
+Bu projenin temel amacı, verilen bir beyin MR görüntüsünü analiz ederek, görüntünün dört sınıftan hangisine ait olduğunu yüksek doğrulukla tespit edebilen bir derin öğrenme modeli geliştirmektir: **"Glioma", "Meningioma", "No Tumor"** veya **"Hipofiz (Pituitary)"**.
 
 ## Veri Seti
 
